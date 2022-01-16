@@ -1,3 +1,6 @@
+import Application from "./Application";
+
+
 type NameTagProps = {
   name: string;
 };
@@ -13,6 +16,9 @@ const NameTag = (props: NameTagProps) => {
       </header>
       <section className="display-name">
         <p>{props.name}</p>
+      </section>
+      <section className="import">
+        <Application />
       </section>
       <footer />
     </main>
