@@ -14,5 +14,10 @@ export const questions: QuestionType[] = [
     id: 2,
     question: "Do you like dark souls?",
     answer: "Yes of course holy crap!",
-  }
+  },
+  {
+    id: 3,
+    question: "Wakatime - thoughts?",
+    answer: "Pretty neato!"
+  },
 ];
