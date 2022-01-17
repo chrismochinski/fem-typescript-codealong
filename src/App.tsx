@@ -23,9 +23,6 @@ const NameTag = (props: NameTagProps) => {
       </section>
       <hr style={{border: '4px solid black', margin: '6em 10em'}} />
 
-      <section className="quiz-party">
-        <QuizParty />
-        </section>
       <footer />
     </main>
   );
