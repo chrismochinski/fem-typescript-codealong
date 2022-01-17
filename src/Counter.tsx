@@ -21,6 +21,10 @@ const Counter = () => {
   }
 
     return (
+<>
+
+      <hr style={{height: '40px', backgroundColor: 'tomato'}} />
+
       <main className="Counter">
         <h1>Days Since Last Incident:</h1>
         <p className="count">{number}</p>
@@ -61,6 +65,7 @@ const Counter = () => {
           </form>
         </section>
       </main>
+      </>
     );
   };
   
