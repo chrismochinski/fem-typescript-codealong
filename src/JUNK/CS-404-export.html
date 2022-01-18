@@ -1,0 +1,102 @@
+<style>
+  /* ---------- Vanilla CSS ---------- */
+
+  .contents._404 {
+    /* taken from global */
+    width: 100%;
+    padding-top: 80px;
+    overflow: hidden;
+  }
+  .contents._404 .header {
+    /* some taken from global */
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-image: url("images/_404/oops.svg"),
+      /* "Oops..." */ url("images/_404/left-side-plug-people.svg"),
+      /* Left side people and plug */
+        url("images/_404/right-side-plug-people.svg"),
+      /* Right side people and plug */ url("images/_404/404-bg-long.svg"); /* gray and green wall bg */
+    background-size: clamp(275px, 21vw, 550px), clamp(500px, 44vw, 750px),
+      clamp(494px, 40vw, 750px), cover;
+    background-position: 51% clamp(15%, 4vw, 37%), left 60%, right 60%,
+      bottom center;
+    margin-top: 0;
+    margin-bottom: 8vw;
+    padding-bottom: clamp(100px, 45vh, 470px);
+    padding-top: clamp(100px, 15vh, 200px);
+  }
+  .contents._404 .header #_404-text {
+    /* the only actual text on the page */
+    position: relative;
+    top: clamp(240px, 21vw, 300px);
+    font-size: clamp(0.75em, 1.5vw, 2.25em);
+    text-align: center;
+  }
+  .contents._404 .header .red-background {
+    /* GO BACK link */
+    color: #fff;
+    background-color: #ff4658;
+  }
+  .contents._404 .header a {
+    text-decoration: none;
+  }
+  .contents._404 .header a:hover {
+    /* GO BACK on hover */
+    color: #000;
+    text-decoration: none;
+  }
+  @media (max-width: 991px) {
+    /* jive with flexbox size sm */
+    .contents._404 .header {
+      background-image: url("images/_404/oops.svg"),
+        url("images/_404/full-404-bg.svg"), url("images/_404/404-bg-long.svg");
+      background-size: clamp(275px, 21vw, 550px), 1033px, cover;
+      background-position: 51% clamp(15%, 4vw, 37%), 50% 13%, bottom center;
+      margin-top: 0;
+      margin-bottom: 8vw;
+      padding-bottom: 231px;
+      padding-top: 269px;
+    }
+    .contents._404 .header #_404-text {
+      top: 77px;
+      font-size: 1em;
+    }
+  }
+  @media (max-width: 30em) {
+    /* mobile sizing appx */
+    .contents._404 .header {
+      background-size: 160px, 479px, cover;
+      background-position: 58% 15%, 50% 36%, bottom center;
+      margin-top: 0;
+      margin-bottom: 8vw;
+      padding-bottom: 36vh;
+      padding-top: 21vh;
+    }
+    .contents._404 #_404-text { 
+      top: 190px !important;
+      font-size: 1.25em !important;
+      right: 0 !important;
+    }
+  }
+</style>
+
+<html>
+  <main role="main" class="center-text contents _404" id="main">
+    <div class="header row">
+      <div class="col-xs-12">
+        <h2 id="_404-text">
+          Something went wrong.<br />Please&nbsp;<a
+            class="red-background"
+            href="https://characterstrong.com/"
+          >
+            GO BACK
+          </a>
+          &nbsp;while we<br />reconnect some wires.
+        </h2>
+      </div>
+    </div>
+  </main>
+</html>
